@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+:root {
+  --blue : #0E94E5;
+  --blueQ : #000011;
+  --white : #FFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--blueQ);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titleApp {
+  color: var(--blue);
+  font-family: "Outfit", sans-serif;
+  font-size: 3em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  border: 2px solid var(--white);
+  padding: 20px;
+  max-width: 900px;
+  margin-left: 290px;
+  height: 570px;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.space-insertTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 27px 27px;
+  font-size: 25px;
+  width: 700px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  color: var(--white);
+  position: relative;
+  left: -10px;
+  top: -5px;
+}
+
+input::placeholder {
+  font-size: 25px;
+  color: var(--white);
+}
+
+button {
+  padding: 27px 27px;
+  width: 150px;
+  font-size: 30px;
+  color: var(--blue);
+  background: none;
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  position: relative;
+  left: 10px;
+  top: -5px;
+  cursor: pointer;
 }
